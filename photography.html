@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Photography page</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=IBM+Plex+Sans+Condensed:wght@300;400;500&family=Lovers+Quarrel&display=swap"
+    />
+    <script src="script.js" defer></script>
+  </head>
+  <body class="photography-page">
+    <header class="site-header site-header--overlay">
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a class="nav-link" href="index.html">home</a>
+        <a class="nav-link active" href="photography.html">photography</a>
+        <a class="nav-link" href="about.html">about</a>
+        <span class="nav-indicator" aria-hidden="true"></span>
+      </nav>
+    </header>
+
+    <main class="photography">
+      <section class="photography-hero" aria-labelledby="photography-hero-title">
+        <div class="photography-hero__content">
+          <figure class="photography-hero__portrait">
+            <img src="photography/me.jpg" alt="Haosen holding a camera" />
+          </figure>
+          <div class="photography-hero__story">
+            <h1 id="photography-hero-title" class="photography-hero__title">My story with photography</h1>
+            <p class="photography-hero__line">I first encountered photography at the beginning of high school. What began as curiosity did not send me rushing to buy a camera; instead, I spent a year with the New York Institute of Photography textbook and photo albums—reading, imagining, and quietly sketching an inner landscape of images.</p>
+            <p class="photography-hero__line">Later I experimented with entry-level mirrorless cameras from Sony and Fujifilm, but the true turning point came after an exam, when I chose the Ricoh GR3 as my prize. That small camera became inseparable from me, teaching me how to see—how light bends, how shadows breathe, how an ordinary street corner can hold an entire world.</p>
+            <p class="photography-hero__line">Even under the weight of high school life, I reserved weekend nights to walk the city with a camera in hand. Those years became a season of discovery: I immersed myself in the works of many photographers, and was deeply influenced by the intimacy of Nobuyoshi Araki and the narrative sensibility of Masashi Asada. Gradually, I began to find my own voice—less about imitation, more about emotion, more about dialogue with the unseen.</p>
+            <p class="photography-hero__line">Today, my photography is not bound by genre. It leans toward the street, yet what I seek is never the scene itself but the atmosphere it carries—the fleeting weight of a feeling, the trace of an emotion that lingers beyond the frame.</p>
+          </div>
+        </div>
+      </section>
+
+      <div class="photography-explore-trigger">
+        <button class="photography-explore-trigger__button" type="button" data-target="#photography-explore" aria-label="Explore photography portfolio">
+          <span class="photography-explore-trigger__label">Explore</span>
+          <svg class="photography-explore-trigger__icon" viewBox="0 0 48 48" aria-hidden="true">
+            <path d="M12 14h24" />
+            <path d="M16 20h16" />
+            <path d="M10 24c5 4 9 5 14 5s9-1 14-5" />
+            <path d="M12 28l12 12 12-12" />
+          </svg>
+        </button>
+      </div>
+
+      <section class="photography-explore" id="photography-explore" aria-label="Photography portfolio">
+        <div class="photography-showcase" role="region" aria-label="Looping photography showcase">
+          <div class="photography-showcase__viewport" aria-live="polite"></div>
+          <button class="photography-showcase__detail-button" type="button" aria-label="Scroll for more">
+            <span class="photography-showcase__detail-icon" aria-hidden="true">▾</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="photography-gallery" aria-label="Photography gallery">
+        <div class="photography-gallery__inner">
+          <div class="photography-gallery__series" data-series="black">
+            <div class="photography-gallery__grid">
+              <figure class="photography-gallery__item"><img src="photography/balck/5bb933480d12ea7acca8521a543ef539.png" alt="Black series photograph 01" loading="lazy" decoding="async" /></figure>
+              <figure class="photography-gallery__item"><img src="photography/balck/74e557e841491dd242634e031968fdfc.jpg" alt="Black series photograph 02" loading="lazy" decoding="async" /></figure>
+              <figure class="photography-gallery__item"><img src="photography/balck/IMG_0114.JPG" alt="Black series photograph 03" loading="lazy" decoding="async" /></figure>
+              <figure class="photography-gallery__item"><img src="photography/balck/IMG_0115.JPG" alt="Black series photograph 04" loading="lazy" decoding="async" /></figure>
+              <figure class="photography-gallery__item"><img src="photography/balck/IMG_0117.JPG" alt="Black series photograph 05" loading="lazy" decoding="async" /></figure>
+              <figure class="photography-gallery__item"><img src="photography/balck/IMG_0119.JPG" alt="Black series photograph 06" loading="lazy" decoding="async" /></figure>
+              <figure class="photography-gallery__item"><img src="photography/balck/IMG_0120.JPG" alt="Black series photograph 07" loading="lazy" decoding="async" /></figure>
+              <figure class="photography-gallery__item"><img src="photography/balck/IMG_0121.JPG" alt="Black series photograph 08" loading="lazy" decoding="async" /></figure>
+              <figure class="photography-gallery__item"><img src="photography/balck/IMG_0122.JPG" alt="Black series photograph 09" loading="lazy" decoding="async" /></figure>
+              <figure class="photography-gallery__item"><img src="photography/balck/IMG_0627.JPG" alt="Black series photograph 10" loading="lazy" decoding="async" /></figure>
+              <figure class="photography-gallery__item"><img src="photography/balck/R0002772.JPG" alt="Black series photograph 11" loading="lazy" decoding="async" /></figure>
+              <figure class="photography-gallery__item"><img src="photography/balck/R0002775.JPG" alt="Black series photograph 12" loading="lazy" decoding="async" /></figure>
+              <figure class="photography-gallery__item"><img src="photography/balck/fxn 2025-01-28 190433_副本.083.jpg" alt="Black series photograph 13" loading="lazy" decoding="async" /></figure>
+              <figure class="photography-gallery__item"><img src="photography/balck/fxn 2025-01-28 190459.913.jpg" alt="Black series photograph 14" loading="lazy" decoding="async" /></figure>
+            </div>
+          </div>
+
+          <div class="photography-gallery__series" data-series="performence">
+            <div class="photography-gallery__grid">
+              <figure class="photography-gallery__item"><img src="photography/performence/IMG_4086.JPG" alt="Performance series photograph 01" loading="lazy" decoding="async" /></figure>
+              <figure class="photography-gallery__item"><img src="photography/performence/IMG_4131.JPG" alt="Performance series photograph 02" loading="lazy" decoding="async" /></figure>
+              <figure class="photography-gallery__item"><img src="photography/performence/IMG_8143.JPG" alt="Performance series photograph 03" loading="lazy" decoding="async" /></figure>
+              <figure class="photography-gallery__item"><img src="photography/performence/IMG_8212.JPG" alt="Performance series photograph 04" loading="lazy" decoding="async" /></figure>
+              <figure class="photography-gallery__item"><img src="photography/performence/IMG_8213.JPG" alt="Performance series photograph 05" loading="lazy" decoding="async" /></figure>
+              <figure class="photography-gallery__item"><img src="photography/performence/IMG_9205.JPG" alt="Performance series photograph 06" loading="lazy" decoding="async" /></figure>
+              <figure class="photography-gallery__item"><img src="photography/performence/IMG_9206.JPG" alt="Performance series photograph 07" loading="lazy" decoding="async" /></figure>
+              <figure class="photography-gallery__item"><img src="photography/performence/IMG_9211.JPG" alt="Performance series photograph 08" loading="lazy" decoding="async" /></figure>
+            </div>
+          </div>
+
+          <div class="photography-gallery__series" data-series="emotion">
+            <div class="photography-gallery__grid">
+              <figure class="photography-gallery__item"><img src="photography/emotion/5bf864d3125725f33adcb7c0af2bc9f0.jpg" alt="Emotion series photograph 01" loading="lazy" decoding="async" /></figure>
+              <figure class="photography-gallery__item"><img src="photography/emotion/63f4e2d037d32ea69fa8c125a04b18af.jpg" alt="Emotion series photograph 02" loading="lazy" decoding="async" /></figure>
+              <figure class="photography-gallery__item"><img src="photography/emotion/6577cc710cca1c0b7b8090d868040842.jpg" alt="Emotion series photograph 03" loading="lazy" decoding="async" /></figure>
+              <figure class="photography-gallery__item"><img src="photography/emotion/IMG_2004.JPG" alt="Emotion series photograph 04" loading="lazy" decoding="async" /></figure>
+              <figure class="photography-gallery__item"><img src="photography/emotion/a9d1f75c0092583ac709506ab6aee6ac.png" alt="Emotion series photograph 05" loading="lazy" decoding="async" /></figure>
+              <figure class="photography-gallery__item"><img src="photography/emotion/bb7a50dfba0193a7f522fcd53ddbd7f3.jpg" alt="Emotion series photograph 06" loading="lazy" decoding="async" /></figure>
+              <figure class="photography-gallery__item"><img src="photography/emotion/c02979f3e3cc8a0231bfb65a09868a58.jpg" alt="Emotion series photograph 07" loading="lazy" decoding="async" /></figure>
+              <figure class="photography-gallery__item"><img src="photography/emotion/f0f5650c7f4b00cc551df8d1673dc366.jpg" alt="Emotion series photograph 08" loading="lazy" decoding="async" /></figure>
+              <figure class="photography-gallery__item"><img src="photography/emotion/fed3e1f33a758c428c7edb6be92c6185.png" alt="Emotion series photograph 09" loading="lazy" decoding="async" /></figure>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

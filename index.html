@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="music/playlist.js" defer></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body class="home-page">
+    <div class="music-widget" aria-label="Global music player">
+      <button
+        class="music-widget__toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="music-widget-panel"
+        aria-label="Open music player"
+      >
+        ♫
+      </button>
+      <article class="music-widget__panel" id="music-widget-panel" aria-hidden="true">
+        <header class="music-widget__header">
+          <div class="music-widget__meta">
+            <strong class="music-widget__title">Not playing</strong>
+            <span class="music-widget__artist">—</span>
+          </div>
+        </header>
+        <div class="music-widget__controls">
+          <button class="music-widget__btn" data-action="prev" aria-label="Previous track">⟨</button>
+          <button class="music-widget__btn" data-action="play" aria-label="Play">▶</button>
+          <button class="music-widget__btn" data-action="next" aria-label="Next track">⟩</button>
+        </div>
+        <div class="music-widget__progress" aria-label="Playback progress">
+          <span class="music-widget__time music-widget__time--current">0:00</span>
+          <div class="music-widget__progress-track">
+            <div class="music-widget__progress-fill"></div>
+          </div>
+          <span class="music-widget__time music-widget__time--total">0:00</span>
+        </div>
+        <ul class="music-widget__playlist" aria-label="Playlist"></ul>
+      </article>
+    </div>
+    <audio id="music-player" preload="none"></audio>
+    <div id="home-greeting" class="typewriter" aria-live="polite">
+      <span class="typewriter__text">
+        <span class="typewriter__line" data-line="0"></span>
+        <span class="typewriter__line" data-line="1"></span>
+      </span>
+    </div>
+    <header class="site-header">
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a class="nav-link active" href="index.html">home</a>
+        <a class="nav-link" href="photography.html">photography</a>
+        <a class="nav-link" href="about.html">about</a>
+        <span class="nav-indicator" aria-hidden="true"></span>
+      </nav>
+    </header>
+    <footer class="home-footer" aria-label="Contact links">
+      <p class="home-footer__label" data-default-label="contact">contact</p>
+      <ul class="home-footer__icons">
+        <li>
+          <button
+            type="button"
+            class="home-footer__icon home-footer__icon--email"
+            data-email="haocean.shi@gmail.com"
+            aria-label="Copy email"
+          >
+            <svg class="home-footer__svg" viewBox="0 0 24 24" aria-hidden="true">
+              <rect x="3.5" y="5.5" width="17" height="13" rx="2.2" />
+              <path d="M5 7l7 5 7-5" />
+            </svg>
+          </button>
+        </li>
+        <li>
+          <a
+            class="home-footer__icon home-footer__icon--github"
+            href="https://github.com/Vinyjp"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Open GitHub"
+          >
+            <svg class="home-footer__svg" viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M12 2.75a9.25 9.25 0 0 0-2.93 18.04c.46.09.63-.2.63-.45v-1.62c-2.58.59-3.12-1.27-3.12-1.27-.43-1.08-1.05-1.36-1.05-1.36-.86-.59.07-.58.07-.58.95.07 1.45.99 1.45.99.84 1.44 2.2 1.03 2.73.79.09-.64.33-1.04.6-1.28-2.07-.24-4.26-1.05-4.26-4.66 0-1.03.37-1.86.97-2.52-.1-.24-.41-1.22.09-2.55 0 0 .78-.26 2.56.97a8.4 8.4 0 0 1 4.6 0c1.78-1.23 2.56-.97 2.56-.97.5 1.33.19 2.31.09 2.55.6.66.97 1.49.97 2.52 0 3.62-2.2 4.42-4.3 4.66.34.3.66.9.66 1.77v2.57c0 .25.17.54.64.45A9.25 9.25 0 0 0 12 2.75Z"
+              />
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a
+            class="home-footer__icon home-footer__icon--netease"
+            href="https://music.163.com/#/user/home?id=1598429640"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Open NetEase Music"
+          >
+            <svg class="home-footer__svg" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M9 4v11.25a3 3 0 1 0 1.6 2.64V7.5h5.4V4H9Z" />
+              <path d="M15 4v2.5" />
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>
